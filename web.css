@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+/* navigation */
+.wrapper{
+    background:black;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.wrapper h1{
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.wrapper span{
+    color: white;
+}
+.nav-items ul{
+    display: flex;
+    list-style: none;
+}
+.nav-items ul li{
+    margin-left: 1px;
+    cursor: pointer;
+}
+.nav-items ul li a{
+    text-transform: capitalize;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 15px;
+    margin: 0;
+    transition: .3s;
+}
+.nav-items ul li a:hover{
+    color:black;
+    background:white;
+}
+
+/* banner-section */
+.banner-wrapper{
+
+}
+.sections{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  
+}
+.section-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1100px;
+    height: 400;
+     text-transform: capitalize;
+    text-align: center;
+    color: #260d96; 
+}
+    /* z-index: ; */
+    
+}
+.section-one .text h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.section-one .text h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3s0px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.section-one .text a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 700;
+    padding: 10px 20px;
+    outline: none;
+    background-color:#ffff;
+    color: #260d96;
+    transition: .5s;
+}
+.section-one .text a:hover{
+    background: black;
+    color:white;
+    
+}
+.section-one .image img{
+    width: 450px;
+    transition: .5s;
+}
+.section-one .image img:hover{
+    width: 455px;
+    background: #6448dc;
+    border-radius: 100px;
+}
+.banner-background{
+    border: 10px solid black;
+    width: 100%;
+    height: 100vh;
+    background-image: url(pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: opacity(.05);
+    position: absolute;
+    top: 69%;
+    left: 0;
+    z-index: 0;
+}
+/* main-body */
+
+.body-wrapper{
+    position: relative;
+    top: 100vh;
+    width: 100%;
+    height: 4000px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background:white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1100px;
+    height: 100vh;
+    color: #ffff;
+    margin-top: 80px;
+}
+.video{
+    color: #260d96;
+}
+.content{
+    display: inline;
+    position: relative;
+}
+ .content h1{
+    text-align: center;
+    border: 1px solid white;
+    color: #260d96;
+.content p{
+   text-align: center;
+   border: 1px solid white;
+}
+
+}
+.examples{
+    position: relative;
+}
+.examples h1{
+    text-align: center;
+    margin-top: 150px;
+    position: sticky;
+    top: 65px;
+    color: #260d96 ;
+}
+footer{
+    background:#212121 ;
+    padding:5px 30px;
+    margin: 0;
+    bottom: 150px;
+    width: 1100rem;
+    box-sizing: border-box;
+}
+footer.cnt{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer.ftr.h3{
+    font-size: 1.4em;
+    margin-bottom: 1.2em;
+    color: #fff;
+}
+footer .cnt a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    line-height: 30px;
+    transition: .3s ease opacity;
+}
+footer.cnt a:hover{
+    opacity: 1;
+}
+footer .ftr{
+    flex-basis: 18%;
+}
+form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f5f5f5;
+}
+.btn input{
+    background: blueviolet;
+    color: #fff;
+    transition: .3s ease background;
+}
+.btn input:hover{
+    background: #000;
+}
+@media only screen and ( max-width: 540px){
+    footer .ftr{
+        flex-basis:80%;
+        margin:0 auto ;
+    }
+    form input{
+        width:90;
+        margin: 5px auto;
+    }
+}
